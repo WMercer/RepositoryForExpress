@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 
-router.post('/:length', (req, res)=> {
+router.get('/:length', (req, res)=> {
     const first =0;
     const second = 1;
     const length = req.params.length;
