@@ -9,7 +9,7 @@ function byFlightNumber(req,res){
    
     var options  = {
          method: 'POST',
-         uri: 'http://localhost:8080/getIntegratedFlightStatusByFlightNumberUseLambda',
+         uri: 'http://localhost:9090/getIntegratedFlightStatusByFlightNumberUseLambda',
          body: req.body,
          json: true 
     }
@@ -28,7 +28,7 @@ function byFlightNumber(req,res){
 function byRoute(req,res){
     var options  = {
         method: 'POST',
-        uri: 'http://localhost:8080/getIntegratedFlightStatusByRouteUseLambda',
+        uri: 'http://localhost:9090/getIntegratedFlightStatusByRouteUseLambda',
         body: req.body,
         json: true 
    }
